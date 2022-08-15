@@ -1,0 +1,39 @@
+{
+  "author": "Jeffer Voss",
+  "description": "Herbs Vs. Monsters",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "npm-watch": "^0.11.0",
+    "tape": "^4.9.1",
+    "test-kit": "^2.9.1"
+  },
+  "email": "vossj625@gmail.com@quicbit.com",
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/JeffBoss625/hvm",
+  "keywords": [
+    "ridiculous",
+    "card",
+    "game"
+  ],
+  "license": "ISC",
+  "name": "hvm",
+  "repository": "JeffBoss625/hvm",
+  "scripts": {
+    "build": "browserify lib/init.js > dist/hvm.js",
+    "watch": "npm-watch",
+    "test": "tape test/*",
+    "launch": "open dist/index.html"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "lib"
+      ],
+      "extensions": "js"
+    }
+  },
+  "url": "https://github.com/JeffBoss625/hvm/issues",
+  "version": "1.0.0"
+}

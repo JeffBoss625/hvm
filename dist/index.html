@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    game {
+        display: grid;
+        grid: "board"   40em
+              "control" 2em
+              /40em;
+        grid-gap: 1em;
+        height: 100%;
+        width: 100%;
+    }
+    board {
+        grid-area: board;
+    }
+    control {
+        grid-area: control;
+    }
+    button {
+        font-size: x-large;
+    }
+</style>
+<game>
+    <board>
+        <canvas></canvas>
+    </board> 
+    <control>
+        <button style="width:50%" name="select_prev">Previous</button>
+        <button style="width:50%" name="select_next">Next</button>
+    </control>
+</game>
+
+<script src="./hvm.js"></script>
